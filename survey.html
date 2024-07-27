@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Форма опроса</h1>
+    <p id="description">Спасибо, что нашли время пройти опрос.</p>
+<form id="survey-form">
+    <label id="name-label" for="firstname">Имя<input type="text" id="name" placeholder="Введите своё имя" name="firstname" required></label> 
+    <label id="email-label" for="mail">Почта<input type="email" id="email" placeholder="Введите свою почту" name="pochta" required></label> 
+    <label id="number-label" for="age">Возраст (необязательно)<input type="number" id="number" min="0" max="100" placeholder="Введите свой возраст" name="age"></label>
+    <label class="article">Чем вы занимаетесь?
+    <label for="school"><input type="radio" name="life" class="inline" id="school" value="schoo"> Школьник</label>
+    <label for="student"><input type="radio" name="life" class="inline" id="student" value="student"> Студент</label>
+    <label for="work"><input type="radio" name="life" class="inline" id="work" value="work"> Работаю</label>
+    </label>
+    <label class="article">Выберите вашу любимую сферу IT
+        <select id="dropdown">
+            <option disabled selected value>Выбрать сферу</option>
+            <option id="app">Разработчик приложений</option>
+            <option id="game">Разработчик игр</option>
+            <option id="front">Фронтенд-разработчик</option>
+            <option id="back">Бекенд-разработчик</option>
+        </select>
+    </label>
+    <label class="article">Какие качества в себе вы хотели бы улучшить?
+        <label for="perseverance"><input type="checkbox" name="improove" id="perseverance" value="perseverance"> Усидчивость</label>
+        <label for="independence"><input type="checkbox" name="improove" id="independence" value="independence"> Самостоятельность</label>
+        <label for="teamwork"><input type="checkbox" name="improove" id="teamwork" value="teamwork"> Умение работать в команде</label>
+    </label>
+    <label class="article"> Какие ещё нужны качества программистам по вашему мнению и почему?
+        <textarea></textarea>
+    </label>
+<input type="submit" value="Submit" id="submit">
+</form>
+</body>
+</html>
